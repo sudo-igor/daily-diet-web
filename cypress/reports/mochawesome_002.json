@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-10T04:26:26.313Z",
+    "end": "2025-05-10T04:26:37.304Z",
+    "duration": 10991,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a5d64117-efb4-4124-b5f9-b445ba2f224e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\03-meals.cy.js",
+      "file": "cypress\\e2e\\03-meals.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "28f23ecc-5dec-45b7-879c-3af23df6a739",
+          "title": "03. Daily Diet - Gerenciamento de Refeições",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "M01: Deve exibir a interface de refeições",
+              "fullTitle": "03. Daily Diet - Gerenciamento de Refeições M01: Deve exibir a interface de refeições",
+              "timedOut": null,
+              "duration": 2851,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Verificar componentes da interface de refeições\ncy.contains('Suas Refeições da Semana').should('be.visible');\ncy.getByDataTest('refresh-meals').should('be.visible');\ncy.getByDataTest('logout-button').should('be.visible');\ncy.getByDataTest('tab-grid').should('be.visible');",
+              "err": {},
+              "uuid": "51803160-823e-4a08-baa0-9b859c2a4a69",
+              "parentUUID": "28f23ecc-5dec-45b7-879c-3af23df6a739",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "M02: Deve navegar entre as abas de visualização",
+              "fullTitle": "03. Daily Diet - Gerenciamento de Refeições M02: Deve navegar entre as abas de visualização",
+              "timedOut": null,
+              "duration": 2756,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Começamos na aba Grid por padrão\ncy.contains('Suas Refeições da Semana').should('be.visible');\n// Navegando para Lista\ncy.getByDataTest('tab-list').click();\ncy.contains('Todas as Refeições').should('be.visible');\n// Navegando para Calendário\ncy.getByDataTest('tab-calendar').click();\ncy.contains('Calendário de Refeições').should('be.visible');\n// Navegando para Dashboard\ncy.getByDataTest('tab-dashboard').click();\ncy.contains('Dashboard de Refeições').should('be.visible');\n// Voltar para a aba grid para continuar os testes\ncy.getByDataTest('tab-grid').click();\ncy.contains('Suas Refeições da Semana').should('be.visible');",
+              "err": {},
+              "uuid": "9563c756-e095-4551-99ae-276eafdf306f",
+              "parentUUID": "28f23ecc-5dec-45b7-879c-3af23df6a739",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "M03: Deve abrir o modal para adicionar uma refeição",
+              "fullTitle": "03. Daily Diet - Gerenciamento de Refeições M03: Deve abrir o modal para adicionar uma refeição",
+              "timedOut": null,
+              "duration": 2818,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Primeiro, precisamos gerar dados de teste para garantir que a interface está preenchida\ncy.getByDataTest('generate-test-data').click();\ncy.getByDataTest('week-day-container').should('be.visible');\n// Verificar se há algum botão de adicionar refeição visível\ncy.get('body').then($body => {\n  if ($body.find('[data-test=\"add-meal-button\"]').length > 0) {\n    cy.getByDataTest('add-meal-button').first().click();\n    // Verificar campos do formulário\n    cy.getByDataTest('meal-name-input').should('be.visible');\n    cy.getByDataTest('meal-description-input').should('be.visible');\n    cy.getByDataTest('meal-date-input').should('be.visible');\n    cy.getByDataTest('meal-time-input').should('be.visible');\n    cy.getByDataTest('meal-calories-input').should('be.visible');\n    cy.getByDataTest('meal-on-diet-input').should('be.visible');\n    // Cancelar para não criar\n    cy.getByDataTest('meal-modal-cancel').click();\n  } else {\n    cy.log('Nenhum botão de adicionar refeição encontrado - Possível vazio');\n  }\n});",
+              "err": {},
+              "uuid": "2788a478-a10e-45cf-a1e2-73d05b8ffd09",
+              "parentUUID": "28f23ecc-5dec-45b7-879c-3af23df6a739",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "M04: Deve gerar e exibir dados de teste",
+              "fullTitle": "03. Daily Diet - Gerenciamento de Refeições M04: Deve gerar e exibir dados de teste",
+              "timedOut": null,
+              "duration": 2395,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Verifica se o botão para gerar dados de teste existe e clica nele\ncy.getByDataTest('generate-test-data').should('be.visible').click();\n// Verificar se há elementos de refeição visíveis na tela\ncy.getByDataTest('week-days-grid').should('be.visible');\ncy.getByDataTest('week-day-container').should('have.length', 7);\n// Verificar se o grid realmente exibe dados\ncy.get('body').then($body => {\n  // Se existir pelo menos um botão de editar, há refeições na tela\n  const hasVisibleMeals = $body.find('[data-test=\"edit-meal-button\"]').length > 0;\n  if (hasVisibleMeals) {\n    cy.log('Dados de teste gerados com sucesso');\n  } else {\n    cy.log('Dados foram gerados, mas nenhuma refeição está visível no grid.');\n  }\n});",
+              "err": {},
+              "uuid": "78a8cb29-6bb6-4250-8201-5a85e5921776",
+              "parentUUID": "28f23ecc-5dec-45b7-879c-3af23df6a739",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "51803160-823e-4a08-baa0-9b859c2a4a69",
+            "9563c756-e095-4551-99ae-276eafdf306f",
+            "2788a478-a10e-45cf-a1e2-73d05b8ffd09",
+            "78a8cb29-6bb6-4250-8201-5a85e5921776"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10820,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 12,
+    "passes": 12,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-10T04:25:19.424Z",
+    "end": "2025-05-10T04:26:03.156Z",
+    "duration": 43732,
+    "testsRegistered": 12,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b729d5b7-0f89-4019-8285-9cf9a42f4568",
+      "title": "",
+      "fullFile": "cypress\\e2e\\01-flow.cy.js",
+      "file": "cypress\\e2e\\01-flow.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c3a66150-c9d6-42e7-b3e7-2c38948d5b36",
+          "title": "01. Daily Diet - Fluxo Completo de Usuário",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "0428ca77-fdf1-428e-a9fe-9399240839c2",
+              "title": "1. Autenticação e Login",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "1.1 Deve exibir a página de login corretamente",
+                  "fullTitle": "01. Daily Diet - Fluxo Completo de Usuário 1. Autenticação e Login 1.1 Deve exibir a página de login corretamente",
+                  "timedOut": null,
+                  "duration": 5219,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.contains('h2', 'Daily Diet').should('be.visible');\ncy.getByDataTest('email-input').should('be.visible');\ncy.getByDataTest('password-input').should('be.visible');\ncy.getByDataTest('login-button').should('be.visible');",
+                  "err": {},
+                  "uuid": "191169e4-c51b-4615-95db-fbaae2e5df93",
+                  "parentUUID": "0428ca77-fdf1-428e-a9fe-9399240839c2",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "1.2 Deve permitir alternância entre login e registro",
+                  "fullTitle": "01. Daily Diet - Fluxo Completo de Usuário 1. Autenticação e Login 1.2 Deve permitir alternância entre login e registro",
+                  "timedOut": null,
+                  "duration": 1258,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Mudar para o formulário de registro\ncy.contains('button', 'Criar Conta').click();\ncy.getByDataTest('firstName-input').should('be.visible');\ncy.getByDataTest('lastName-input').should('be.visible');\n// Voltar para o formulário de login\ncy.contains('button', 'Entrar').click();\ncy.getByDataTest('firstName-input').should('not.exist');",
+                  "err": {},
+                  "uuid": "343921a5-905a-49a3-8f05-c4f67be1e992",
+                  "parentUUID": "0428ca77-fdf1-428e-a9fe-9399240839c2",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "1.3 Deve fazer login com usuário existente",
+                  "fullTitle": "01. Daily Diet - Fluxo Completo de Usuário 1. Autenticação e Login 1.3 Deve fazer login com usuário existente",
+                  "timedOut": null,
+                  "duration": 2984,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.getByDataTest('email-input').type('teste_novo@example.com');\ncy.getByDataTest('password-input').type('123456');\ncy.getByDataTest('login-button').click();\ncy.url().should('include', '/home', {\n  timeout: 5000\n});",
+                  "err": {},
+                  "uuid": "4a27191a-7de7-4a44-93fa-7dfe21ee1bd6",
+                  "parentUUID": "0428ca77-fdf1-428e-a9fe-9399240839c2",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "191169e4-c51b-4615-95db-fbaae2e5df93",
+                "343921a5-905a-49a3-8f05-c4f67be1e992",
+                "4a27191a-7de7-4a44-93fa-7dfe21ee1bd6"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 9461,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "7a53089b-2c02-47d1-a4ba-59175a723825",
+              "title": "2. Home e Navegação",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "2.1 Deve exibir a interface inicial corretamente",
+                  "fullTitle": "01. Daily Diet - Fluxo Completo de Usuário 2. Home e Navegação 2.1 Deve exibir a interface inicial corretamente",
+                  "timedOut": null,
+                  "duration": 3152,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.contains('Suas Refeições da Semana').should('be.visible');\ncy.getByDataTest('logout-button').should('be.visible');\ncy.getByDataTest('tab-grid').should('be.visible');\ncy.getByDataTest('refresh-meals').should('be.visible');\ncy.getByDataTest('generate-test-data').should('be.visible');",
+                  "err": {},
+                  "uuid": "20b307bd-1c6a-4c7d-9f21-5a2ee7be8e75",
+                  "parentUUID": "7a53089b-2c02-47d1-a4ba-59175a723825",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "2.2 Deve navegar entre as abas corretamente",
+                  "fullTitle": "01. Daily Diet - Fluxo Completo de Usuário 2. Home e Navegação 2.2 Deve navegar entre as abas corretamente",
+                  "timedOut": null,
+                  "duration": 3947,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Aba Grid é a padrão\ncy.contains('Suas Refeições da Semana').should('be.visible');\n// Navegar para Lista\ncy.getByDataTest('tab-list').click();\ncy.contains('Todas as Refeições').should('be.visible');\n// Navegar para Calendário\ncy.getByDataTest('tab-calendar').click();\ncy.contains('Calendário de Refeições').should('be.visible');\n// Navegar para Dashboard\ncy.getByDataTest('tab-dashboard').click();\ncy.contains('Dashboard de Refeições').should('be.visible');\n// Voltar para a aba Grid\ncy.getByDataTest('tab-grid').click();\ncy.contains('Suas Refeições da Semana').should('be.visible');",
+                  "err": {},
+                  "uuid": "9ddfbf1c-04fe-4192-a694-44cd5aa04902",
+                  "parentUUID": "7a53089b-2c02-47d1-a4ba-59175a723825",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "2.3 Deve gerar dados de teste",
+                  "fullTitle": "01. Daily Diet - Fluxo Completo de Usuário 2. Home e Navegação 2.3 Deve gerar dados de teste",
+                  "timedOut": null,
+                  "duration": 3057,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.getByDataTest('generate-test-data').click();\ncy.getByDataTest('week-days-grid').should('be.visible');\ncy.getByDataTest('week-day-container').should('have.length', 7);",
+                  "err": {},
+                  "uuid": "c0430538-606f-4bd4-a1b1-7c55a6a2809d",
+                  "parentUUID": "7a53089b-2c02-47d1-a4ba-59175a723825",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "20b307bd-1c6a-4c7d-9f21-5a2ee7be8e75",
+                "9ddfbf1c-04fe-4192-a694-44cd5aa04902",
+                "c0430538-606f-4bd4-a1b1-7c55a6a2809d"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 10156,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "6a50dbcc-ad00-46ed-b313-e941a69a2e6f",
+              "title": "3. Gerenciamento de Refeições",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "3.1 Deve abrir modal para adicionar nova refeição",
+                  "fullTitle": "01. Daily Diet - Fluxo Completo de Usuário 3. Gerenciamento de Refeições 3.1 Deve abrir modal para adicionar nova refeição",
+                  "timedOut": null,
+                  "duration": 3322,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Verificar se há botões de adicionar refeição disponíveis\ncy.get('body').then($body => {\n  if ($body.find('[data-test=\"add-meal-button\"]').length > 0) {\n    cy.getByDataTest('add-meal-button').first().click();\n    // Verificar campos do formulário\n    cy.getByDataTest('meal-name-input').should('be.visible');\n    cy.getByDataTest('meal-description-input').should('be.visible');\n    cy.getByDataTest('meal-date-input').should('be.visible');\n    cy.getByDataTest('meal-time-input').should('be.visible');\n    cy.getByDataTest('meal-calories-input').should('be.visible');\n    cy.getByDataTest('meal-on-diet-input').should('be.visible');\n    // Cancelar para não criar\n    cy.getByDataTest('meal-modal-cancel').click();\n  } else {\n    cy.log('Nenhum botão de adicionar refeição encontrado - Possível vazio');\n  }\n});",
+                  "err": {},
+                  "uuid": "4a1b96fa-d447-4c50-b352-f4c00725262d",
+                  "parentUUID": "6a50dbcc-ad00-46ed-b313-e941a69a2e6f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "3.2 Deve adicionar uma nova refeição",
+                  "fullTitle": "01. Daily Diet - Fluxo Completo de Usuário 3. Gerenciamento de Refeições 3.2 Deve adicionar uma nova refeição",
+                  "timedOut": null,
+                  "duration": 6470,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Abrir o modal de adicionar\ncy.get('body').then($body => {\n  if ($body.find('[data-test=\"add-meal-button\"]').length > 0) {\n    cy.getByDataTest('add-meal-button').first().click();\n    // Preencher o formulário\n    cy.getByDataTest('meal-name-input').type('Refeição de Teste E2E');\n    cy.getByDataTest('meal-description-input').type('Descrição da refeição de teste');\n    cy.getByDataTest('meal-calories-input').type('450');\n    cy.getByDataTest('meal-on-diet-input').check();\n    // Enviar o formulário (aqui usamos o botão de adicionar)\n    // Como o botão de adicionar tem um data-test dinâmico, usamos a seleção via contains\n    cy.contains('button', 'Adicionar Refeição').click();\n    // Verificar se o modal foi fechado\n    cy.getByDataTest('meal-name-input').should('not.exist');\n    // Na prática, deveríamos verificar se a refeição foi adicionada à lista\n    // mas como é um teste de exemplo, simplificamos\n  } else {\n    cy.log('Pulando teste - Não há botão de adicionar refeição disponível');\n  }\n});",
+                  "err": {},
+                  "uuid": "640f77d0-4ade-4da2-8a59-4ddf6d5470c4",
+                  "parentUUID": "6a50dbcc-ad00-46ed-b313-e941a69a2e6f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "4a1b96fa-d447-4c50-b352-f4c00725262d",
+                "640f77d0-4ade-4da2-8a59-4ddf6d5470c4"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 9792,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "eb5f7ba6-9159-49ef-b2ef-24bbe70bd314",
+              "title": "4. Dashboard e Estatísticas",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "4.1 Deve exibir cartões de estatísticas no dashboard",
+                  "fullTitle": "01. Daily Diet - Fluxo Completo de Usuário 4. Dashboard e Estatísticas 4.1 Deve exibir cartões de estatísticas no dashboard",
+                  "timedOut": null,
+                  "duration": 3696,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.getByDataTest('dashboard-summary-card').should('be.visible');\ncy.getByDataTest('dashboard-total-meals').should('be.visible');\ncy.getByDataTest('dashboard-on-diet-meals').should('be.visible');\ncy.getByDataTest('dashboard-off-diet-meals').should('be.visible');\ncy.getByDataTest('dashboard-avg-calories').should('be.visible');",
+                  "err": {},
+                  "uuid": "6226773d-3ced-4c7a-a527-9a57c4b3d547",
+                  "parentUUID": "eb5f7ba6-9159-49ef-b2ef-24bbe70bd314",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "4.2 Deve exibir gráficos no dashboard",
+                  "fullTitle": "01. Daily Diet - Fluxo Completo de Usuário 4. Dashboard e Estatísticas 4.2 Deve exibir gráficos no dashboard",
+                  "timedOut": null,
+                  "duration": 3171,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.getByDataTest('dashboard-diet-distribution').should('be.visible');\ncy.getByDataTest('dashboard-weekday-chart').should('be.visible');\ncy.getByDataTest('dashboard-calories-trend').should('be.visible');",
+                  "err": {},
+                  "uuid": "311b603b-d77c-4a44-9ec0-4038dca91f3f",
+                  "parentUUID": "eb5f7ba6-9159-49ef-b2ef-24bbe70bd314",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "4.3 Deve atualizar dados ao clicar no botão de atualizar",
+                  "fullTitle": "01. Daily Diet - Fluxo Completo de Usuário 4. Dashboard e Estatísticas 4.3 Deve atualizar dados ao clicar no botão de atualizar",
+                  "timedOut": null,
+                  "duration": 3032,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.getByDataTest('dashboard-refresh-button').click();\ncy.getByDataTest('dashboard-summary-card').should('be.visible');\n// Verificar valores numéricos nos cartões\ncy.getByDataTest('dashboard-total-meals').find('.text-2xl').invoke('text').then(parseFloat).should('be.a', 'number');",
+                  "err": {},
+                  "uuid": "cd231e78-8bde-4e38-a887-dc75dc6e031b",
+                  "parentUUID": "eb5f7ba6-9159-49ef-b2ef-24bbe70bd314",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "6226773d-3ced-4c7a-a527-9a57c4b3d547",
+                "311b603b-d77c-4a44-9ec0-4038dca91f3f",
+                "cd231e78-8bde-4e38-a887-dc75dc6e031b"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 9899,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "0cbab066-a9d7-4f25-9cd4-4769f4318d6a",
+              "title": "5. Logout e Segurança",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "5.1 Deve fazer logout corretamente",
+                  "fullTitle": "01. Daily Diet - Fluxo Completo de Usuário 5. Logout e Segurança 5.1 Deve fazer logout corretamente",
+                  "timedOut": null,
+                  "duration": 3171,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.getByDataTest('logout-button').click();\ncy.url().should('include', '/login', {\n  timeout: 5000\n});",
+                  "err": {},
+                  "uuid": "f7b03cee-9dab-4cbe-8fdf-c078b07af552",
+                  "parentUUID": "0cbab066-a9d7-4f25-9cd4-4769f4318d6a",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "f7b03cee-9dab-4cbe-8fdf-c078b07af552"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 3171,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

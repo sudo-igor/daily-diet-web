@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="7" failures="0" errors="0" time="8.553">
+  <testsuite name="PrivateRoute" errors="0" failures="0" skipped="0" timestamp="2025-05-10T04:24:49" time="2.412" tests="3">
+    <testcase classname="PrivateRoute Deve mostrar tela de carregamento quando isLoading=true" name="PrivateRoute Deve mostrar tela de carregamento quando isLoading=true" time="0.055">
+    </testcase>
+    <testcase classname="PrivateRoute Deve redirecionar para login quando usuário não está autenticado" name="PrivateRoute Deve redirecionar para login quando usuário não está autenticado" time="0.012">
+    </testcase>
+    <testcase classname="PrivateRoute Deve renderizar conteúdo quando usuário está autenticado" name="PrivateRoute Deve renderizar conteúdo quando usuário está autenticado" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="AuthContext" errors="0" failures="0" skipped="0" timestamp="2025-05-10T04:24:49" time="4.577" tests="4">
+    <testcase classname="AuthContext Deve carregar usuário ao inicializar" name="AuthContext Deve carregar usuário ao inicializar" time="0.601">
+    </testcase>
+    <testcase classname="AuthContext Deve realizar login com sucesso" name="AuthContext Deve realizar login com sucesso" time="0.544">
+    </testcase>
+    <testcase classname="AuthContext Deve realizar cadastro com sucesso" name="AuthContext Deve realizar cadastro com sucesso" time="0.558">
+    </testcase>
+    <testcase classname="AuthContext Deve realizar logout com sucesso" name="AuthContext Deve realizar logout com sucesso" time="0.584">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,342 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 2,
+  "numPassedTests": 7,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 2,
+  "numTotalTests": 7,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1746851086050,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1746851092290,
+        "runtime": 2412,
+        "slow": false,
+        "start": 1746851089878
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\components\\PrivateRoute.spec.tsx",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "PrivateRoute"
+          ],
+          "duration": 55,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "PrivateRoute Deve mostrar tela de carregamento quando isLoading=true",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Deve mostrar tela de carregamento quando isLoading=true"
+        },
+        {
+          "ancestorTitles": [
+            "PrivateRoute"
+          ],
+          "duration": 12,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "PrivateRoute Deve redirecionar para login quando usuário não está autenticado",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Deve redirecionar para login quando usuário não está autenticado"
+        },
+        {
+          "ancestorTitles": [
+            "PrivateRoute"
+          ],
+          "duration": 8,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "PrivateRoute Deve renderizar conteúdo quando usuário está autenticado",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Deve renderizar conteúdo quando usuário está autenticado"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1746851094455,
+        "runtime": 4577,
+        "slow": false,
+        "start": 1746851089878
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "AuthContext"
+          ],
+          "duration": 601,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "AuthContext Deve carregar usuário ao inicializar",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Deve carregar usuário ao inicializar"
+        },
+        {
+          "ancestorTitles": [
+            "AuthContext"
+          ],
+          "duration": 544,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "AuthContext Deve realizar login com sucesso",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Deve realizar login com sucesso"
+        },
+        {
+          "ancestorTitles": [
+            "AuthContext"
+          ],
+          "duration": 558,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "AuthContext Deve realizar cadastro com sucesso",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Deve realizar cadastro com sucesso"
+        },
+        {
+          "ancestorTitles": [
+            "AuthContext"
+          ],
+          "duration": 584,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "AuthContext Deve realizar logout com sucesso",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Deve realizar logout com sucesso"
+        }
+      ],
+      "console": [
+        {
+          "message": "Auth provider mounted, loading user",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:115:13)\n    at commitHookEffectListMount (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:23189:26)\n    at commitPassiveMountOnFiber (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24970:11)\n    at commitPassiveMountEffects_complete (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24930:9)\n    at commitPassiveMountEffects_begin (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24917:7)\n    at commitPassiveMountEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24905:3)\n    at flushPassiveEffectsImpl (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27078:3)\n    at flushPassiveEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27023:14)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:26808:9\n    at flushActQueue (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2667:24)\n    at act (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2582:11)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at renderRoot (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:190:26)\n    at render (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:292:10)\n    at renderHook (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:340:7)\n    at Object.<anonymous> (E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:41:32)\n    at Promise.then.completed (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\testWorker.js:106:12)",
+          "type": "log"
+        },
+        {
+          "message": "Attempting to load user",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:54:15)\n    at loadUser (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:116:5)\n    at commitHookEffectListMount (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:23189:26)\n    at commitPassiveMountOnFiber (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24970:11)\n    at commitPassiveMountEffects_complete (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24930:9)\n    at commitPassiveMountEffects_begin (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24917:7)\n    at commitPassiveMountEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24905:3)\n    at flushPassiveEffectsImpl (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27078:3)\n    at flushPassiveEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27023:14)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:26808:9\n    at flushActQueue (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2667:24)\n    at act (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2582:11)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at renderRoot (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:190:26)\n    at render (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:292:10)\n    at renderHook (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:340:7)\n    at Object.<anonymous> (E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:41:32)\n    at Promise.then.completed (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\testWorker.js:106:12)",
+          "type": "log"
+        },
+        {
+          "message": "Load user response: {\n  users: [\n    {\n      id: '1',\n      first_name: 'Test',\n      last_name: 'User',\n      email: 'test@example.com',\n      photo_url: 'https://example.com/photo.jpg',\n      weight: 70,\n      height: 175,\n      goal: 'Manter o peso'\n    }\n  ]\n}",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:56:15)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)",
+          "type": "log"
+        },
+        {
+          "message": "Setting user from array: {\n  id: '1',\n  first_name: 'Test',\n  last_name: 'User',\n  email: 'test@example.com',\n  photo_url: 'https://example.com/photo.jpg',\n  weight: 70,\n  height: 175,\n  goal: 'Manter o peso'\n}",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:61:17)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)",
+          "type": "log"
+        },
+        {
+          "message": "Auth provider mounted, loading user",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:115:13)\n    at commitHookEffectListMount (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:23189:26)\n    at commitPassiveMountOnFiber (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24970:11)\n    at commitPassiveMountEffects_complete (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24930:9)\n    at commitPassiveMountEffects_begin (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24917:7)\n    at commitPassiveMountEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24905:3)\n    at flushPassiveEffectsImpl (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27078:3)\n    at flushPassiveEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27023:14)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:26808:9\n    at flushActQueue (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2667:24)\n    at act (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2582:11)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at renderRoot (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:190:26)\n    at render (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:292:10)\n    at renderHook (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:340:7)\n    at Object.<anonymous> (E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:68:32)\n    at Promise.then.completed (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\testWorker.js:106:12)",
+          "type": "log"
+        },
+        {
+          "message": "Attempting to load user",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:54:15)\n    at loadUser (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:116:5)\n    at commitHookEffectListMount (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:23189:26)\n    at commitPassiveMountOnFiber (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24970:11)\n    at commitPassiveMountEffects_complete (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24930:9)\n    at commitPassiveMountEffects_begin (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24917:7)\n    at commitPassiveMountEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24905:3)\n    at flushPassiveEffectsImpl (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27078:3)\n    at flushPassiveEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27023:14)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:26808:9\n    at flushActQueue (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2667:24)\n    at act (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2582:11)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at renderRoot (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:190:26)\n    at render (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:292:10)\n    at renderHook (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:340:7)\n    at Object.<anonymous> (E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:68:32)\n    at Promise.then.completed (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\testWorker.js:106:12)",
+          "type": "log"
+        },
+        {
+          "message": "Load user response: {\n  users: [\n    {\n      id: '1',\n      first_name: 'Test',\n      last_name: 'User',\n      email: 'test@example.com',\n      photo_url: 'https://example.com/photo.jpg',\n      weight: 70,\n      height: 175,\n      goal: 'Manter o peso'\n    }\n  ]\n}",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:56:15)",
+          "type": "log"
+        },
+        {
+          "message": "Setting user from array: {\n  id: '1',\n  first_name: 'Test',\n  last_name: 'User',\n  email: 'test@example.com',\n  photo_url: 'https://example.com/photo.jpg',\n  weight: 70,\n  height: 175,\n  goal: 'Manter o peso'\n}",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:61:17)",
+          "type": "log"
+        },
+        {
+          "message": "Signing in with: test@example.com",
+          "origin": "    at Object.log [as signIn] (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:122:17)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:77:28\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:48:24\n    at act (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2512:16)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at Object.<anonymous> (E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:76:14)",
+          "type": "log"
+        },
+        {
+          "message": "Sign in successful, response: { success: true }",
+          "origin": "    at Object.log [as signIn] (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:128:17)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:77:7",
+          "type": "log"
+        },
+        {
+          "message": "Attempting to load user",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:54:15)\n    at Object.loadUser [as signIn] (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:145:17)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:77:7",
+          "type": "log"
+        },
+        {
+          "message": "Load user response: {\n  users: [\n    {\n      id: '1',\n      first_name: 'Test',\n      last_name: 'User',\n      email: 'test@example.com',\n      photo_url: 'https://example.com/photo.jpg',\n      weight: 70,\n      height: 175,\n      goal: 'Manter o peso'\n    }\n  ]\n}",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:56:15)\n    at Object.signIn (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:145:11)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:77:7",
+          "type": "log"
+        },
+        {
+          "message": "Setting user from array: {\n  id: '1',\n  first_name: 'Test',\n  last_name: 'User',\n  email: 'test@example.com',\n  photo_url: 'https://example.com/photo.jpg',\n  weight: 70,\n  height: 175,\n  goal: 'Manter o peso'\n}",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:61:17)\n    at Object.signIn (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:145:11)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:77:7",
+          "type": "log"
+        },
+        {
+          "message": "Auth provider mounted, loading user",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:115:13)\n    at commitHookEffectListMount (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:23189:26)\n    at commitPassiveMountOnFiber (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24970:11)\n    at commitPassiveMountEffects_complete (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24930:9)\n    at commitPassiveMountEffects_begin (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24917:7)\n    at commitPassiveMountEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24905:3)\n    at flushPassiveEffectsImpl (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27078:3)\n    at flushPassiveEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27023:14)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:26808:9\n    at flushActQueue (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2667:24)\n    at act (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2582:11)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at renderRoot (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:190:26)\n    at render (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:292:10)\n    at renderHook (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:340:7)\n    at Object.<anonymous> (E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:97:32)\n    at Promise.then.completed (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\testWorker.js:106:12)",
+          "type": "log"
+        },
+        {
+          "message": "Attempting to load user",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:54:15)\n    at loadUser (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:116:5)\n    at commitHookEffectListMount (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:23189:26)\n    at commitPassiveMountOnFiber (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24970:11)\n    at commitPassiveMountEffects_complete (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24930:9)\n    at commitPassiveMountEffects_begin (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24917:7)\n    at commitPassiveMountEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24905:3)\n    at flushPassiveEffectsImpl (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27078:3)\n    at flushPassiveEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27023:14)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:26808:9\n    at flushActQueue (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2667:24)\n    at act (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2582:11)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at renderRoot (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:190:26)\n    at render (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:292:10)\n    at renderHook (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:340:7)\n    at Object.<anonymous> (E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:97:32)\n    at Promise.then.completed (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\testWorker.js:106:12)",
+          "type": "log"
+        },
+        {
+          "message": "Load user response: {\n  users: [\n    {\n      id: '1',\n      first_name: 'Test',\n      last_name: 'User',\n      email: 'test@example.com',\n      photo_url: 'https://example.com/photo.jpg',\n      weight: 70,\n      height: 175,\n      goal: 'Manter o peso'\n    }\n  ]\n}",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:56:15)",
+          "type": "log"
+        },
+        {
+          "message": "Setting user from array: {\n  id: '1',\n  first_name: 'Test',\n  last_name: 'User',\n  email: 'test@example.com',\n  photo_url: 'https://example.com/photo.jpg',\n  weight: 70,\n  height: 175,\n  goal: 'Manter o peso'\n}",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:61:17)",
+          "type": "log"
+        },
+        {
+          "message": "Signing up with: { email: 'new@example.com', firstName: 'New', lastName: 'User' }",
+          "origin": "    at Object.log [as signUp] (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:172:17)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:106:28\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:48:24\n    at act (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2512:16)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at Object.<anonymous> (E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:105:14)",
+          "type": "log"
+        },
+        {
+          "message": "Sign up successful, response: { success: true }",
+          "origin": "    at Object.log [as signUp] (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:183:17)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:106:7",
+          "type": "log"
+        },
+        {
+          "message": "Signing in with: new@example.com",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:122:17)\n    at Object.signIn (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:200:17)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:106:7",
+          "type": "log"
+        },
+        {
+          "message": "Sign in successful, response: { success: true }",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:128:17)\n    at Object.signUp (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:200:11)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:106:7",
+          "type": "log"
+        },
+        {
+          "message": "Attempting to load user",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:54:15)\n    at loadUser (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:145:17)\n    at Object.signUp (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:200:11)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:106:7",
+          "type": "log"
+        },
+        {
+          "message": "Load user response: {\n  users: [\n    {\n      id: '1',\n      first_name: 'Test',\n      last_name: 'User',\n      email: 'test@example.com',\n      photo_url: 'https://example.com/photo.jpg',\n      weight: 70,\n      height: 175,\n      goal: 'Manter o peso'\n    }\n  ]\n}",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:56:15)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:145:11\n    at Object.signUp (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:200:11)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:106:7",
+          "type": "log"
+        },
+        {
+          "message": "Setting user from array: {\n  id: '1',\n  first_name: 'Test',\n  last_name: 'User',\n  email: 'test@example.com',\n  photo_url: 'https://example.com/photo.jpg',\n  weight: 70,\n  height: 175,\n  goal: 'Manter o peso'\n}",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:61:17)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:145:11\n    at Object.signUp (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:200:11)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:106:7",
+          "type": "log"
+        },
+        {
+          "message": "Auth provider mounted, loading user",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:115:13)\n    at commitHookEffectListMount (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:23189:26)\n    at commitPassiveMountOnFiber (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24970:11)\n    at commitPassiveMountEffects_complete (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24930:9)\n    at commitPassiveMountEffects_begin (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24917:7)\n    at commitPassiveMountEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24905:3)\n    at flushPassiveEffectsImpl (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27078:3)\n    at flushPassiveEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27023:14)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:26808:9\n    at flushActQueue (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2667:24)\n    at act (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2582:11)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at renderRoot (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:190:26)\n    at render (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:292:10)\n    at renderHook (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:340:7)\n    at Object.<anonymous> (E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:127:32)\n    at Promise.then.completed (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\testWorker.js:106:12)",
+          "type": "log"
+        },
+        {
+          "message": "Attempting to load user",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:54:15)\n    at loadUser (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:116:5)\n    at commitHookEffectListMount (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:23189:26)\n    at commitPassiveMountOnFiber (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24970:11)\n    at commitPassiveMountEffects_complete (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24930:9)\n    at commitPassiveMountEffects_begin (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24917:7)\n    at commitPassiveMountEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:24905:3)\n    at flushPassiveEffectsImpl (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27078:3)\n    at flushPassiveEffects (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:27023:14)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\react-dom\\cjs\\react-dom.development.js:26808:9\n    at flushActQueue (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2667:24)\n    at act (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2582:11)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at renderRoot (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:190:26)\n    at render (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:292:10)\n    at renderHook (E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\pure.js:340:7)\n    at Object.<anonymous> (E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:127:32)\n    at Promise.then.completed (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (E:\\DailyDiet3\\daily-diet-web\\node_modules\\jest-runner\\build\\testWorker.js:106:12)",
+          "type": "log"
+        },
+        {
+          "message": "Load user response: {\n  users: [\n    {\n      id: '1',\n      first_name: 'Test',\n      last_name: 'User',\n      email: 'test@example.com',\n      photo_url: 'https://example.com/photo.jpg',\n      weight: 70,\n      height: 175,\n      goal: 'Manter o peso'\n    }\n  ]\n}",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:56:15)",
+          "type": "log"
+        },
+        {
+          "message": "Setting user from array: {\n  id: '1',\n  first_name: 'Test',\n  last_name: 'User',\n  email: 'test@example.com',\n  photo_url: 'https://example.com/photo.jpg',\n  weight: 70,\n  height: 175,\n  goal: 'Manter o peso'\n}",
+          "origin": "    at log (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:61:17)",
+          "type": "log"
+        },
+        {
+          "message": "Signing out",
+          "origin": "    at Object.log [as signOut] (E:\\DailyDiet3\\daily-diet-web\\src\\contexts\\AuthContext.tsx:220:15)\n    at E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:139:22\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:48:24\n    at act (E:\\DailyDiet3\\daily-diet-web\\node_modules\\react\\cjs\\react.development.js:2512:16)\n    at E:\\DailyDiet3\\daily-diet-web\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at Object.<anonymous> (E:\\DailyDiet3\\daily-diet-web\\src\\__tests__\\contexts\\AuthContext.spec.tsx:138:14)",
+          "type": "log"
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
+  "wasInterrupted": false
+}
